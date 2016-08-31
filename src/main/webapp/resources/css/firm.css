@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+
+.imageFirm1{
+	
+	width: 220px;
+	height: 250px;
+	display: inline-block;
+	float: right;
+	border: 1px solid silver;
+	border-radius: 5px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.imageFirm2{
+	width: 200px;
+	height: 230px;
+	margin: 0 auto; 
+}
+
+#link{
+	
+	margin-bottom: 30px
+	 
+}

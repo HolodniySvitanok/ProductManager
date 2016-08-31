@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+<tiles-definitions>
+
+	<definition name="baseLayout" template="/WEB-INF/views/tiles/default/layout.jsp">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/default/header.jsp" />
+		<put-attribute name="left" value="/WEB-INF/views/tiles/default/left.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/default/footer.jsp" />
+	</definition>
+
+	<definition name="home" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/main/home.jsp" />
+	</definition>
+	
+	
+	<!-- user -->
+	<definition name="user" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/user/user.jsp" />
+	</definition>
+	<definition name="setUser" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/user/setUser.jsp" />
+	</definition>
+	<definition name="addUser" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/user/addUser.jsp" />
+	</definition>
+	<definition name="showUser" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/user/showUser.jsp" />
+	</definition>
+	
+	<!-- authorization and registration -->
+	<definition name="authorization" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/authorization/authorization.jsp" />
+	</definition>
+	<definition name="registration" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/authorization/registration.jsp" />
+	</definition>
+	
+	<!-- category -->
+	<definition name="category" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/category/category.jsp" />
+	</definition>
+	<definition name="addCategory" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/category/addCategory.jsp" />
+	</definition>
+	<definition name="setCategory" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/category/setCategory.jsp" />
+	</definition>
+	
+	<!-- firm -->
+	<definition name="firm" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="css" value="firm.css" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/firm/firm.jsp" />
+	</definition>
+	<definition name="addFirm" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="css" value="firm.css" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/firm/addFirm.jsp" />
+	</definition>
+	<definition name="setFirm" extends="baseLayout">
+		<put-attribute name="title" value="My service" />
+		<put-attribute name="css" value="firm.css" />
+		<put-attribute name="main" value="/WEB-INF/views/pages/firm/setFirm.jsp" />
+	</definition>
+	
+	
+</tiles-definitions>
